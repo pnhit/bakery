@@ -1,0 +1,28 @@
+:root{
+    --while-color:#fff;
+    --black-color:#000;
+    --text-light-color:#878787;
+    --text-color:#222;
+    --primary-color:#ee4d2d;
+    --primary-green-color:#56cfe1;
+    --border-color:#dbdbdb;
+    --gold-color:#ffce3c;
+    --header-height:70px;
+    --slider-height:480px;
+}
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+ul {
+    
+}
+a{
+    text-decoration: none;
+}
