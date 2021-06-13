@@ -1,0 +1,20 @@
+/* mobile */
+@media (max-width: 576px){
+    :root{
+        --header-height:70px;
+    }
+    .header-group-btn__list-items-auth, .header-group-btn__list-items-like{
+        display:none;
+    }
+    .modal-search,.modal-login,.modal-cart{
+        width:320px;
+        right:-320px;
+    }
+    
+}
+/* Tablet and mobile */
+@media (max-width: 1023px) {
+    .header-logo-wrap{
+        justify-content:center;
+    }
+}

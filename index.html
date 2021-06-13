@@ -19,26 +19,555 @@
         <header class="header">
             <div class="grid wide">
                 <div class="header-container row">
-                    <div class="header-logo">
-
+                    <div class="header-menu-bar  col l-0 m-4 c-4">
+                        <a class="header-menu-bar__icon btn-modal-active" data-modal="menu-mobile">
+                            <i class="ti-menu"></i>
+                        </a>
                     </div>
-                    <div class="header-menu">
-
+                    <div class="header-logo col l-3 m-4 c-4 ">
+                        <div class="header-logo-wrap">
+                            <a href="/" class="header-logo-link">
+                                <img src="./asset/images/source/logo.jpg" alt="HTBakery" class="header-logo-link-img">
+                            </a>
+                        </div>
+                       
                     </div>
-                    <div class="header-group-btn">
-                        
+                    <div class="header-menu  col l-6 m-0 c-0">
+                        <ul class="header-menu__list">
+                            <li class="header-menu__list-items header-menu__list-items--acrive">
+                                <a href="/" class="header-menu__list-items-link ">Trang Chủ</a>
+                            </li>
+                            <li class="header-menu__list-items">
+                                <a href="/shop.html" class="header-menu__list-items-link">Cửa Hàng</a>
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__list-items header-submenu__list-items--active">
+                                        <a href="/category.html" class="header-submenu__list-items-link">Bánh Sinh Nhật</a>
+                                    </li>
+                                    <li class="header-submenu__list-items">
+                                        <a href="/category.html" class="header-submenu__list-items-link">Đồ Uống / Kem Tươi</a>
+                                    </li>
+                                    <li class="header-submenu__list-items">
+                                        <a href="/category.html" class="header-submenu__list-items-link">Bánh Mỳ / Bánh Ngọt</a>
+                                    </li>
+                                    <li class="header-submenu__list-items">
+                                        <a href="/category.html" class="header-submenu__list-items-link">Ăn Nhẹ / Lạnh</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-menu__list-items">
+                                <a href="/info.html" class="header-menu__list-items-link">Giới Thiệu</a>
+                            </li>
+                            <li class="header-menu__list-items">
+                                <a href="/news.html" class="header-menu__list-items-link">Tin Tức</a>
+                            </li>
+                            <li class="header-menu__list-items">
+                                <a href="/contact.html" class="header-menu__list-items-link">Liên Hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-group-btn  col l-3 m-4 c-4">
+                        <ul class="header-group-btn__list">
+                            <li class="header-group-btn__list-items">
+                                <a class="header-group-btn__list-items-link header-group-btn__list-items-search btn-modal-active"data-modal="search">
+                                    <i class="header-group-btn__list-items-link-icon ti-search"></i>
+                                </a>
+                            </li>
+                            <li class="header-group-btn__list-items">
+                                <a class="header-group-btn__list-items-link header-group-btn__list-items-auth btn-modal-active" data-modal="auth">
+                                    <i class="header-group-btn__list-items-link-icon ti-user"></i>
+                                </a>
+                            </li>
+                            <li class="header-group-btn__list-items" >
+                                <a class="header-group-btn__list-items-link header-group-btn__list-items-like btn-modal-active"  data-modal="like">
+                                    <i class="header-group-btn__list-items-link-icon ti-heart"></i>
+                                    <span class="header-group-btn__list-items-like-count">2</span>
+                                </a>
+                            </li>
+                            <li class="header-group-btn__list-items">
+                                <a class="header-group-btn__list-items-link header-group-btn__list-items-cart btn-modal-active"  data-modal="cart">
+                                    <i class="header-group-btn__list-items-link-icon ti-shopping-cart"></i>
+                                    <span class="header-group-btn__list-items-cart-count">2</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                
-
             </div>
         </header>
         <div class="app_container">
-
         </div>
         <footer class="footer">
-
         </footer>
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-search">
+            <form action="" class="modal-search__form">
+                <div class="modal-search__form-header">
+                    <div class="modal-search__form-header-title">Tìm Kiếm</div>
+                    <div class="modal-search__form-close  modal-close"><i class="ti-close"></i></div>
+                </div>
+                <div class="modal-search__form-content">
+                    <div class="modal-search__form-content-wrap">
+                        <div class="modal-search__form-content-row">
+                            <select name="" id="modal-search__form-select" class="modal-search__form-select">
+                                <option value="*">Tất cả sản phẩm</option>
+                                <option value="*">Bánh Sinh Nhật</option>
+                                <option value="*">Đồ Uống / Kem Tươi</option>
+                                <option value="*">Bánh Mỳ / Bánh Ngọt</option>
+                                <option value="*">Ăn Nhẹ / Lạnh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-search__form-content-wrap">
+                        <div class="modal-search__form-content-row modal-search__form-content-input">
+                           <input type="text" name="" id="modal-search__form-content-input" placeholder="Từ Khóa">
+                           <button type="submit"><i class="ti-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="modal-search__results">
+                <div class="modal-search__results-header">Kết quả tìm kiếm</div>
+                <div class="modal-search__results-content">
+                    <ul class="modal-search__results-content-list">
+                        <li class="modal-search__results-content-list-items">
+                            <a href="" class="modal-search__results-content-list-items-link">
+                                <div class="modal-search__results-content-list-items-thumbnail" style="background-image: url('./asset/images/product/IMG_0887.jpg')"></div>
+                                <div class="modal-search__results-content-list-items-description">
+                                    <div class="modal-search__results-content-list-items-description-name">Bánh Sinh Nhật</div>
+                                    <div class="modal-search__results-content-list-items-description-price">100.000 <span>₫</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="modal-search__results-content-list-items">
+                            <a href="" class="modal-search__results-content-list-items-link">
+                                <div class="modal-search__results-content-list-items-thumbnail" style="background-image: url('./asset/images/product/IMG_1134.jpg')"></div>
+                                <div class="modal-search__results-content-list-items-description">
+                                    <div class="modal-search__results-content-list-items-description-name">Bánh Mỳ</div>
+                                    <div class="modal-search__results-content-list-items-description-price">150.000 <span>₫</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="modal-search__results-content-list-items">
+                            <a href="" class="modal-search__results-content-list-items-link">
+                                <div class="modal-search__results-content-list-items-thumbnail" style="background-image: url('./asset/images/product/IMG_3242.jpg')"></div>
+                                <div class="modal-search__results-content-list-items-description">
+                                    <div class="modal-search__results-content-list-items-description-name">Trà Đào</div>
+                                    <div class="modal-search__results-content-list-items-description-price">200.000 <span>₫</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="modal-search__results-content-list-items">
+                            <a href="" class="modal-search__results-content-list-items-link">
+                                <div class="modal-search__results-content-list-items-thumbnail" style="background-image: url('./asset/images/product/IMG_3370.jpg')"></div>
+                                <div class="modal-search__results-content-list-items-description">
+                                    <div class="modal-search__results-content-list-items-description-name">Kem </div>
+                                    <div class="modal-search__results-content-list-items-description-price">150.000 <span>₫</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="modal-search__results-content-list-items">
+                            <a href="" class="modal-search__results-content-list-items-link">
+                                <div class="modal-search__results-content-list-items-thumbnail" style="background-image: url('./asset/images/product/IMG_7833.jpg')"></div>
+                                <div class="modal-search__results-content-list-items-description">
+                                    <div class="modal-search__results-content-list-items-description-name">Bánh Cáy</div>
+                                    <div class="modal-search__results-content-list-items-description-price">100.000 <span>₫</span></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="modal-content modal-auth">
+            <form action="" class="modal-auth__form modal-auth__form-login  modal-auth__form--active">
+                <div class="modal-auth__form-header modal-auth__form-login-header">
+                    <div class="modal-auth__form-header-title modal-auth__form-login-header-title">Đăng Nhập</div>
+                    <div class="modal-auth__form-close  modal-close"><i class="ti-close"></i></div>
+                </div>
+                <div class="modal-auth__form-content modal-login-content">
+                    <div class="modal-auth__form-content-wrap">
+
+                        <div class="modal-auth__form-content-row">
+                            <label for="CustomerEmailLogin">Email <span class="required">*</span></label>
+                            <input type="email"  id="CustomerEmailLogin">
+                        </div>
+                        <div class="modal-auth__form-content-row">
+                            <label for="CustomerPasswordLogin">Password <span class="required">*</span></label>
+                            <input type="password" value="" id="CustomerPasswordLogin">
+                        </div>
+                        <div class="modal-auth__form-content-row">
+                            <button type="submit" class="btn modal-auth__form-btn">Đăng Nhập</button>
+                        </div>
+                        <div class="modal-auth__form-content-row">
+                            <p class="modal-auth__form-support">Bạn quên mật khẩu? <a class="modal-auth__form-support-link" data-form="recover">Khôi phục</a></p>
+                        </div>
+                        <div class="modal-auth__form-content-row">
+                            <p class="modal-auth__form-support">Bạn chưa có tài khoản?<a class="modal-auth__form-support-link" data-form="create">Tạo mới</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form action="" class="modal-auth__form modal-auth__form-recover ">
+                <div class="modal-auth__form-header modal-auth__form-recover-header">
+                    <div class="modal-auth__form-header-title modal-auth__form-recover-header-title">Reset Password</div>
+                    <div class="modal-auth__form-close  modal-close"><i class="ti-close"></i></div>
+                </div>
+                <div class="modal-auth__form-content modal-recover-content">
+                    <div class="modal-auth__form-content-wrap">
+
+                        <div class="modal-auth__form-content-row">
+                            <label for="CustomerEmailRecover">Email <span class="required">*</span></label>
+                            <input type="email"  id="CustomerEmailRecover">
+                        </div>
+                        
+                        <div class="modal-auth__form-content-row">
+                            <button type="submit" class="btn modal-auth__form-btn">Reset Password</button>
+                        </div>
+                        <div class="modal-auth__form-content-row">
+                            <p class="modal-auth__form-support">Bạn nhớ mật khẩu? <a class="modal-auth__form-support-link" data-form="login">Đi tới đăng nhập</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form action="" class="modal-auth__form modal-auth__form-create">
+                <div class="modal-auth__form-header modal-auth__form-create-header">
+                    <div class="modal-auth__form-header-title modal-auth__form-create-header-title">Đăng Ký</div>
+                    <div class="modal-auth__form-close  modal-close"><i class="ti-close"></i></div>
+                </div>
+                <div class="modal-auth__form-content modal-create-content">
+                    <div class="modal-auth__form-content-wrap">
+                        <div class="modal-auth__form-content-row">
+                            <label for="CustomerFirstName">Họ </label>
+                            <input type="text"  id="CustomerFirstName">
+                        </div>
+                        <div class="modal-auth__form-content-row">
+                            <label for="CustomerLastName">Tên </label>
+                            <input type="text" value="" id="CustomerLastName">
+                        </div>
+                        <div class="modal-auth__form-content-row">
+                            <label for="CustomerEmailCreate">Email <span class="required">*</span></label>
+                            <input type="email"  id="CustomerEmailCreate">
+                        </div>
+                        <div class="modal-auth__form-content-row">
+                            <label for="CustomerPasswordCreate">Password <span class="required">*</span></label>
+                            <input type="password" value="" id="CustomerPasswordCreate">
+                        </div>
+                        <div class="modal-auth__form-content-row">
+                            <button type="submit" class="btn modal-auth__form-btn">Đăng Ký</button>
+                        </div>
+                        <div class="modal-auth__form-content-row">
+                            <p class="modal-auth__form-support">Bạn đã có tài khoản? <a class="modal-auth__form-support-link" data-form="login">Đi tới đăng nhập</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-content modal-cart">
+            <div class=" modal-cart__header">
+                <div class=" modal-cart__header-title">Giỏ Hàng</div>
+                <div class= "modal-cart__header-close  modal-close"><i class="ti-close"></i></div>
+            </div>
+            <div class="modal-cart__content">
+                <div class="modal-cart__content-wrap">
+                    <div class="modal-cart__empty">
+                        <!-- add class .modal-cart__empty--avtive nếu ko có sản phẩm -->
+                        <div class="modal-cart__empty-content-img"></div>
+                        <div class="modal-cart__empty-content-title">Bạn Chưa Có Sản Phẩn Nào</div>
+                        <a href="./shop.html"class="modal-cart__empty-content-btn btn">Tới Mua Hàng</a>
+                    </div>
+                    <div class="modal-cart__item">
+                        <div class="modal-cart__item-header">
+                            <h3>
+                                Sản Phẩm Đã Thêm
+                            </h3> 
+                        </div>
+                        <div class="modal-cart__item-content">
+                            <ul class="modal-cart__item-content-list">
+                                <li class="modal-cart__item-content-list-items">
+                                    <div  class="modal-cart__item-content-list-items-content">
+                                        <a href="./product-detail.html" class="modal-cart__item-content-list-items-content-link">
+                                            <div class="modal-cart__item-content-list-items-content-thumbnail" style="background-image: url('./asset/images/product/IMG_1134.jpg')"></div>
+                                        </a>
+                                        <div class="modal-cart__item-content-list-items-content-description">
+                                            <a href="./product-detail.html" class="modal-cart__item-content-list-items-content-link">
+                                                <div class="modal-cart__item-content-list-items-content-description-name">Bánh Sinh Nhật</div>
+                                            </a>
+                                            <div class="modal-cart__item-content-list-items-content-description-price">150.000 <span>₫</span></div>
+                                            <div class="modal-cart__item-content-list-items-content-description-quantity">
+                                                <div class="modal-cart__item-content-list-items-content-description-quantity-minus">
+                                                    <i class="ti-minus"></i>
+                                                    <i class="ti-trash"></i>
+                                                </div>
+                                                <div class="modal-cart__item-content-list-items-content-description-quantity-label">
+                                                    1
+                                                </div>
+                                                <div class="modal-cart__item-content-list-items-content-description-quantity-plus">
+                                                    <i class="ti-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="modal-cart__item-content-list-items">
+                                    <div  class="modal-cart__item-content-list-items-content">
+                                        <a href="./product-detail.html" class="modal-cart__item-content-list-items-content-link">
+                                            <div class="modal-cart__item-content-list-items-content-thumbnail" style="background-image: url('./asset/images/product/IMG_1134.jpg')"></div>
+                                        </a>
+                                        <div class="modal-cart__item-content-list-items-content-description">
+                                            <a href="./product-detail.html" class="modal-cart__item-content-list-items-content-link">
+                                                <div class="modal-cart__item-content-list-items-content-description-name">Bánh Sinh Nhật</div>
+                                            </a>
+                                            <div class="modal-cart__item-content-list-items-content-description-price">150.000 <span>₫</span></div>
+                                            <div class="modal-cart__item-content-list-items-content-description-quantity">
+                                                <div class="modal-cart__item-content-list-items-content-description-quantity-minus">
+                                                    <i class="ti-minus"></i>
+                                                    <i class="ti-trash"></i>
+                                                </div>
+                                                <div class="modal-cart__item-content-list-items-content-description-quantity-label">
+                                                    1
+                                                </div>
+                                                <div class="modal-cart__item-content-list-items-content-description-quantity-plus">
+                                                    <i class="ti-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="modal-cart__item-content-list-items">
+                                    <div  class="modal-cart__item-content-list-items-content">
+                                        <a href="./product-detail.html" class="modal-cart__item-content-list-items-content-link">
+                                            <div class="modal-cart__item-content-list-items-content-thumbnail" style="background-image: url('./asset/images/product/IMG_1134.jpg')"></div>
+                                        </a>
+                                        <div class="modal-cart__item-content-list-items-content-description">
+                                            <a href="./product-detail.html" class="modal-cart__item-content-list-items-content-link">
+                                                <div class="modal-cart__item-content-list-items-content-description-name">Bánh Sinh Nhật</div>
+                                            </a>
+                                            <div class="modal-cart__item-content-list-items-content-description-price">150.000 <span>₫</span></div>
+                                            <div class="modal-cart__item-content-list-items-content-description-quantity">
+                                                <div class="modal-cart__item-content-list-items-content-description-quantity-minus">
+                                                    <i class="ti-minus"></i>
+                                                    <i class="ti-trash"></i>
+                                                </div>
+                                                <div class="modal-cart__item-content-list-items-content-description-quantity-label">
+                                                    1
+                                                </div>
+                                                <div class="modal-cart__item-content-list-items-content-description-quantity-plus">
+                                                    <i class="ti-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-cart__item-into-memory">
+                            <div class="modal-cart__item-into-memory-title">Thành Tiền:</div>
+                            <div class="modal-cart__item-into-memory-label">500.000<span>₫</span></div>
+                        </div>
+                        <div class="modal-cart__item-action">
+                            <a href="" class="btn modal-cart__item-action-detail-cart">Chi Tiết Giỏ Hàng</a>
+                            <a href="" class="btn modal-cart__item-action-checkout">Thanh Toán</a>
+                        </div>
+                    </div>
+                    <div class="modal-cart__suggest">
+                        <div class="modal-cart__suggest-heading">
+                            <h3>Có thể Bạn Quan Tâm</h3>
+                        </div>
+                        <ul class="modal-cart__suggest-list">
+                            <li class="modal-cart__suggest-list-items">
+                                <a href="/product-detail.html" class="modal-cart__suggest-list-item-link">
+                                    <div class="modal-cart__suggest-list-item-thumbnail" style="background-image: url('./asset/images/product/IMG_9879.jpg')"></div>
+                                    <div class="modal-cart__suggest-list-item-description">
+                                        <div class="modal-cart__suggest-list-item-description-name">Bánh Sinh Nhật</div>
+                                        <div class="modal-cart__suggest-list-item-description-price">150.000 <span>₫</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="modal-cart__suggest-list-items">
+                                <a href="/product-detail.html" class="modal-cart__suggest-list-item-link">
+                                    <div class="modal-cart__suggest-list-item-thumbnail" style="background-image: url('./asset/images/product/IMG_9744.jpg')"></div>
+                                    <div class="modal-cart__suggest-list-item-description">
+                                        <div class="modal-cart__suggest-list-item-description-name">Bánh Kem</div>
+                                        <div class="modal-cart__suggest-list-item-description-price">250.000 <span>₫</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="modal-cart__suggest-list-items">
+                                <a href="/product-detail.html" class="modal-cart__suggest-list-item-link">
+                                    <div class="modal-cart__suggest-list-item-thumbnail" style="background-image: url('./asset/images/product/IMG_8761.jpg')"></div>
+                                    <div class="modal-cart__suggest-list-item-description">
+                                        <div class="modal-cart__suggest-list-item-description-name">Kem</div>
+                                        <div class="modal-cart__suggest-list-item-description-price">150.000 <span>₫</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="modal-cart__suggest-list-items">
+                                <a href="/product-detail.html" class="modal-cart__suggest-list-item-link">
+                                    <div class="modal-cart__suggest-list-item-thumbnail" style="background-image: url('./asset/images/product/IMG_8760.jpg')"></div>
+                                    <div class="modal-cart__suggest-list-item-description">
+                                        <div class="modal-cart__suggest-list-item-description-name">Đồ Uống</div>
+                                        <div class="modal-cart__suggest-list-item-description-price">250.000 <span>₫</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="modal-cart__suggest-list-items">
+                                <a href="/product-detail.html" class="modal-cart__suggest-list-item-link">
+                                    <div class="modal-cart__suggest-list-item-thumbnail" style="background-image: url('./asset/images/product/IMG_3370.jpg')"></div>
+                                    <div class="modal-cart__suggest-list-item-description">
+                                        <div class="modal-cart__suggest-list-item-description-name">Bánh Mỳ</div>
+                                        <div class="modal-cart__suggest-list-item-description-price">100.000 <span>₫</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-content modal-like">
+            <div class=" modal-like__header">
+                <div class=" modal-like__header-title">Yêu Thích</div>
+                <div class= "modal-like__header-close  modal-close"><i class="ti-close"></i></div>
+            </div>
+            <div class="modal-like__content">
+                <div class="modal-like__content-wrap">
+                    <ul class="modal-like__list">
+                        <li class="modal-like-items">
+                            <div class="modal-like-items-content">
+                                <a href="./product-detail.html" class="modal-like-items-link">
+                                    <div class="modal-like-items-thumbnail" style="background-image: url('./asset/images/product/IMG_1134.jpg')"></div> 
+                                </a>
+                                <div class="modal-like-items-description">
+                                    <a href="./product-detail.html" class="modal-like-items-description-name">Bánh Sinh Nhật</a>
+                                    <div class="modal-like-items-description-price">150.000<span>₫</span></div>
+                                    <a href="./product-detail.html" class="btn modal-like-items-description-view-detail">Xem</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="modal-like-items">
+                            <div class="modal-like-items-content">
+                                <a href="./product-detail.html" class="modal-like-items-link">
+                                    <div class="modal-like-items-thumbnail" style="background-image: url('./asset/images/product/IMG_8760.jpg')"></div> 
+                                </a>
+                                <div class="modal-like-items-description">
+                                    <a href="./product-detail.html" class="modal-like-items-description-name">Kem</a>
+                                    <div class="modal-like-items-description-price">250.000<span>₫</span></div>
+                                    <a href="./product-detail.html" class="btn modal-like-items-description-view-detail">Xem</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="modal-like-items">
+                            <div class="modal-like-items-content">
+                                <a href="./product-detail.html" class="modal-like-items-link">
+                                    <div class="modal-like-items-thumbnail" style="background-image: url('./asset/images/product/IMG_3370.jpg')"></div> 
+                                </a>
+                                <div class="modal-like-items-description">
+                                    <a href="./product-detail.html" class="modal-like-items-description-name">Đồ Uống</a>
+                                    <div class="modal-like-items-description-price">100.000<span>₫</span></div>
+                                    <a href="./product-detail.html" class="btn modal-like-items-description-view-detail">Xem</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-content modal-menu-mobile">
+            <div class="modal-menu-mobile__header">
+                <div class="modal-menu-mobile__header-title">Menu</div>
+                <div class="modal-menu-mobile__header-close  modal-close"><i class="ti-close"></i></div>
+            </div>
+            <div class="modal-menu-mobile__content">
+                <div class="modal-menu-mobile__content-wrap">
+                    <ul class="modal-menu-mobile__list">
+                        <li class="modal-menu-mobile__list-items modal-menu-mobile__list-items--active">
+                            <a href="/" class="modal-menu-mobile__list-items-link">Trang Chủ</a>
+                        </li>
+                        <li class="modal-menu-mobile__list-items">
+                            <a href="/shop.html" class="modal-menu-mobile__list-items-link">Cửa Hàng</a>
+                            <label for="modal-menu-mobile__submenu-checkbox"  class="modal-menu-mobile__list-items-icon">
+                                <i class="ti-plus modal-menu-mobile__list-items-icon-plus"></i>
+                                <i class="ti-minus modal-menu-mobile__list-items-icon-minus"></i>
+                            </label>
+                            <input type="checkbox" name="" hidden id="modal-menu-mobile__submenu-checkbox">
+                            <ul class="modal-menu-mobile__submenu-list">
+                                <li class="modal-menu-mobile__submenu-list-items">
+                                    <a href="./category.html" class="modal-menu-mobile__submenu-list-items-link">Bánh Sinh Nhật</a>
+                                </li>
+                                <li class="modal-menu-mobile__submenu-list-items">
+                                    <a href="/category.html" class="modal-menu-mobile__submenu-list-items-link">Đồ Uống / Kem Tươi</a>
+                                </li>
+                                <li class="modal-menu-mobile__submenu-list-items">
+                                    <a href="/category.html" class="modal-menu-mobile__submenu-list-items-link">Bánh Mỳ / Bánh Ngọt</a>
+                                </li>
+                                <li class="modal-menu-mobile__submenu-list-items">
+                                    <a href="/category.html" class="modal-menu-mobile__submenu-list-items-link">Ăn Nhẹ / Lạnh</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="modal-menu-mobile__list-items">
+                            <a href="/info" class="modal-menu-mobile__list-items-link">Giới Thiệu</a>
+                        </li>
+                        <li class="modal-menu-mobile__list-items">
+                            <a href="/info" class="modal-menu-mobile__list-items-link">Tin Tức</a>
+                        </li>
+                        <li class="modal-menu-mobile__list-items">
+                            <a href="/info" class="modal-menu-mobile__list-items-link">Liên Hệ</a>
+                        </li>
+                    </ul>
+                    <ul class="modal-menu-mobile__list">
+                        <li class="modal-menu-mobile__list-items">
+                            <a class="modal-menu-mobile__list-items-link btn-modal-active" data-modal="search">
+                                <i class="ti-search"></i>Tìm Kiếm
+                            </a>
+                        </li>
+                        <li class="modal-menu-mobile__list-items ">
+                            <a  class="modal-menu-mobile__list-items-link btn-modal-active" data-modal="auth">
+                                <i class="ti-user"></i>Đăng Ký/Đăng Nhập
+                            </a>
+                        </li>
+                        <li class="modal-menu-mobile__list-items">
+                            <a  class="modal-menu-mobile__list-items-link modal-menu-mobile__list-items-link-like btn-modal-active" data-modal="like">
+                                <i class="ti-heart"></i>Yêu Thích <span>2</span>
+                            </a>
+                        </li>
+                        <li class="modal-menu-mobile__list-items">
+                            <a class="modal-menu-mobile__list-items-link modal-menu-mobile__list-items-link-cart btn-modal-active" data-modal="cart">
+                                <i class="ti-shopping-cart"></i>Giỏ Hàng <span>2</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="modal-menu-mobile__support">
+                        <h3 class="modal-menu-mobile__support-title">Cần Hỗ Trợ?</h3>
+                        <div class="modal-menu-mobile__support-phone">
+                            <span class="modal-menu-mobile__support-phone-content"><i class="ti-mobile"></i> 0354.162.662</span>
+                        </div>
+                        <div class="modal-menu-mobile__support-email">
+                            <span class="modal-menu-mobile__support-email-content"><i class="ti-email"></i> phamngochoan.it@gmail.com</span>
+                        </div>
+                    </div>
+                   <div class="modal-menu-mobile__social">
+                       <a href="" class="modal-menu-mobile__social-link">
+                           <i class="ti-facebook"></i>
+                       </a>
+                       <a href="" class="modal-menu-mobile__social-link">
+                        <i class="ti-android"></i>
+                       </a>
+                       <a href="" class="modal-menu-mobile__social-link">
+                        <i class="ti-apple"></i>
+                       </a>
+                       <a href="" class="modal-menu-mobile__social-link">
+                        <i class="ti-instagram"></i>
+                       </a>
+                   </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="./asset/js/main.js"></script>
+    <script>
+        main();
+    </script>
 </body>
 </html>

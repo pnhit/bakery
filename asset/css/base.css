@@ -7,11 +7,12 @@
     --primary-green-color:#56cfe1;
     --border-color:#dbdbdb;
     --gold-color:#ffce3c;
-    --header-height:70px;
+    --header-height:90px;
     --slider-height:480px;
 }
 *{
     box-sizing: inherit;
+    /* transition: all ease-in 0.1s ; */
 }
 
 html{
@@ -21,8 +22,46 @@ html{
     box-sizing: border-box;
 }
 ul {
-    
+    list-style: none;
+    padding:0px;
+    margin:0px;
 }
 a{
     text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    min-width: 120px;
+}
+.btn:hover{
+    opacity: 0.8;
+    transition: opacity linear 0.2s;
+}
+.btn-dissable{
+    opacity: 0.5 !important;
+    cursor: default;
+
+}
+@keyframes growDown {
+    0% {
+        opacity: 0;
+        transform: scaleY(0)
+
+    }
+    80%{
+        transform: scaleY(0.8);
+
+    }
+    100%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
 }
