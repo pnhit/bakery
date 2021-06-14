@@ -6,15 +6,22 @@
     .header-group-btn__list-items-auth, .header-group-btn__list-items-like{
         display:none;
     }
-    .modal-search,.modal-login,.modal-cart{
+    .modal-search,.modal-auth,.modal-cart,.modal-like, .modal-menu-mobile{
         width:320px;
-        right:-320px;
+        /* right:-320px; */
     }
     
 }
 /* Tablet and mobile */
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
+    :root{
+        --slider-height:400px;
+    }
     .header-logo-wrap{
         justify-content:center;
     }
+    .app-slideshow__control-prev,
+    .app-slideshow__control-next{
+        display:none;
+    } 
 }
