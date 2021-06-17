@@ -302,9 +302,11 @@ function hendlSlideShow(nameSlideShow,autoPlay){
 function main(){
     
     const slideShowMain= new hendlSlideShow('.app-slideshow',true);
+    const quickViewSlide= new hendlSlideShow('.modal-quickview-slide',false);
     const submenumobile= new hendlSubMenuMobile();
     slideShowMain.run();
     submenumobile.run();
+    quickViewSlide.run();
     hendlModal();
     hendlModalFormAuth();
 }
