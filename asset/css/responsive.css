@@ -69,5 +69,8 @@
     .modal-quickview.modal-quickview--active{
         left:0px
     }
+    .footer-content-wrap{
+        padding:0 15px;
+    }
 }
 

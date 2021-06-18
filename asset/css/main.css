@@ -1780,3 +1780,106 @@
     font-size:1.6rem;
     font-weight:500
 }
+.app-maps{
+margin-bottom: 50px;
+}
+/* footer */
+.footer-coppyright-contnet {
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    background: var(--while-color);
+}
+.footer-coppyright-contnet p{
+    font-size:1.4rem;
+    font-weight:400;
+    color: var(--text-color)
+}
+.footer-content{
+    background-color:#f6f6f8;
+}
+.footer-content-header{
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+}
+.footer-content-header::after{
+    content: "";
+    position: absolute;
+    width:35%;
+    bottom:0px;
+    left: 0px;
+    height: 2px;
+    transform:translateY(50%);
+    background-color: var(--primary-color);
+}
+.footer-content-header h3{
+    font-size:1.6rem;
+    font-weight:500;
+    color: var(--text-color);
+}
+.footer-content-name-company{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    margin: 15px 0px;
+    font-size:1.4rem;
+    font-weight: 500;
+    color: var(--text-light-color);
+}
+.footer-content-info{
+  
+}
+.footer-content-info-items{
+    display: flex;
+    align-items:center;
+    margin-bottom:15px;
+    
+}
+.footer-content-info-items-icon{
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    
+    margin-right: 20px;
+}
+.footer-content-info-items-icon i{
+    display: block;
+    font-size:1.6rem;
+    text-align: center;
+    line-height:40px;
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+}
+.footer-content-info-items-description-name{
+    font-size: 1.5rem;
+    font-weight:500;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+.footer-content-info-items-description-label{
+    font-size: 1.4rem;
+    font-weight:400;
+    color: var(--text-light-color)
+}
+.footer-content-maps,.footer-content-facebook{
+    margin-top: 15px;
+}
+.footer-content-category{
+    margin-top:15px;
+}
+.footer-content-category-items-link{
+    display: block;
+    padding: 8px 0;
+    font-size:1.6rem;
+    color: var(--text-color);
+}
+.footer-content-category-items {
+    border-bottom: 1px solid var(--border-color);
+}
+.footer-content-category-items:hover .footer-content-category-items-link{
+    color: var(--primary-color)
+}
+.footer-content-col{
+    margin-bottom: 15px;
+}
