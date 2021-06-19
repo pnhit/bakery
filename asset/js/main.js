@@ -149,10 +149,10 @@ function hendlSlideShow(nameSlideShow,autoPlay){
                 }
                 this.slideShowEle.onmouseup=(e)=>{
                     this.endClientX=e.clientX;
-                    if(this.startClientX-this.endClientX>0){
+                    if(this.startClientX-this.endClientX>50){
                         this.next();
                     }
-                    else if(this.startClientX-this.endClientX<0){
+                    else if(this.endClientX-this.startClientX>50){
                         this.prev();
                     }
                 }
@@ -164,10 +164,10 @@ function hendlSlideShow(nameSlideShow,autoPlay){
                 }
                 this.slideShowEle.ontouchend=(e)=>{
                     this.endClientX=e.changedTouches[0].clientX;
-                    if(this.startClientX-this.endClientX>0){
+                    if(this.startClientX-this.endClientX>50){
                         this.next();
                     }
-                    else if(this.startClientX-this.endClientX<0){
+                    else if(this.endClientX-this.startClientX>50){
                         this.prev();
                     }
                 }
@@ -203,6 +203,7 @@ function hendlSlideShow(nameSlideShow,autoPlay){
                 clearInterval(this.timer);
                 this.auto();
             }
+           
             this.currentIndex=nextIndex;
         }
     }
@@ -230,6 +231,7 @@ function hendlSlideShow(nameSlideShow,autoPlay){
                 clearInterval(this.timer);
                 this.auto();
             }
+            // console.log(this.listSlidesEles)
             this.currentIndex=prevIndex;
         }
     }

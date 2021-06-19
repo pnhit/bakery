@@ -459,8 +459,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border: 1px solid var(--border-color);
     margin-right: 10px;
 }
@@ -474,12 +474,21 @@
 .modal-search__results-content-list-items-description-price{
     font-size: 1.6rem;
     font-weight: 400;
-    color: var(--text-light-color)
-
+    color: var(--text-light-color);
+    margin-bottom: 10px;
 }
 .modal-search__results-content-list-items-description-price span{
     font-size: 1.2rem;
     color: var(--primary-color)
+}
+.modal-search__results-content-list-items-btn{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--while-color);
+    background-color: var(--primary-green-color);
+    border: 1px solid var(--border-color);
+    padding: 8px 32px;
+    text-align: center;
 }
 .modal-menu-mobile{
     width:340px;
@@ -782,8 +791,8 @@
     transition: all linear 0.3s;
 }
 .modal-cart__suggest-list-item-thumbnail{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border: 1px solid var(--border-color);
     background-color: var(--while-color);
     background-position: center;
@@ -802,10 +811,20 @@
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--text-light-color);
+    margin-bottom: 10px;
 }
 .modal-cart__suggest-list-item-description-price span{
     color: var(--primary-color);
     font-size:1.2rem
+}
+.modal-cart__suggest-list-item-description-btn{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--while-color);
+    background-color: var(--primary-green-color);
+    border: 1px solid var(--border-color);
+    padding: 8px 32px;
+    text-align: center;
 }
 .modal-cart__suggest-list-item-link:hover .modal-cart__suggest-list-item-description-name{
     color: var(--primary-green-color)
@@ -886,7 +905,8 @@
     padding:10px;
     font-size:1.6rem;
     font-weight: 500;
-    color: var(--text-color)
+    color: var(--text-color);
+    cursor: pointer;
 }
 .modal-cart__item-content-list-items-content-description-quantity-minus .ti-minus{
     display: none;
@@ -943,7 +963,7 @@
     margin-bottom: 20px;
 }
 
-.modal-cart__item-action-checkout{
+.modal-cart__item-action-order{
     width: 100%;
     background-color:var(--primary-green-color);
     border:1px solid var(--border-color);
@@ -1033,15 +1053,15 @@
 .modal-like-items-description-view-detail{
     font-size:1.6rem;
     font-weight:400;
-    color: var(--text-color);
-    background-color: var(--while-color);
+    color: var(--while-color);
+    background-color:var(--primary-green-color);
     border:1px solid var(--border-color);
     padding:8px 32px;
     text-align: center;
 }
 .modal-like-items-description-view-detail:hover{
     color: var(--while-color);
-    background-color:var(--primary-green-color);
+    ;
     
 }
 .modal-like-items-description-name:hover{
@@ -1056,7 +1076,7 @@
     bottom:0px;
     width: 100%;
     left:100%;
-    transform:translateX(-50%);
+    
     background-color: transparent;
     overflow-y: auto;
     transition: all linear 0.3s; 
@@ -1078,16 +1098,10 @@
     top:50%;
     transform:translateY(-50%);
     pointer-events:visible;
-    
-
-}
-.modal-quickview-slide-wrap
-{
-   
-    
 }
 .modal-quickview.modal-quickview--active{
     left:50%;
+    transform:translateX(-50%);
     visibility:visible;
 }
 .modal-quickview__header{
@@ -1327,7 +1341,7 @@
     margin-bottom: 15px;
 }
 /* app-container */
-.app_container{
+.app-container{
     width: 100%;
     overflow: hidden;
     margin-top: var(--header-height);
@@ -1379,7 +1393,7 @@
     top: 50%;
     transform:translateY(-50%);
     color: var(--while-color);
-    right:200px;
+    right:25%;
 }
 .app-slideshow__control-prev,.app-slideshow__control-next{
     width: 50px ;
@@ -1454,7 +1468,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--while-color);
-    transition: all linear 0.3s;
+    transition: all linear 0.6s;
 }
 .app-category-content-link-overlay{
     position: absolute;
@@ -1598,7 +1612,7 @@
     left: 0px;
     right: 0px;
     bottom: 0px; 
-    transition: all linear 0.3s;   
+    transition: all linear 0.6s;   
 }
 .list-product__body-items-thumbnail:hover .list-product__body-items-thumbnail-img{
     transform:scale(1.05)
@@ -1699,7 +1713,7 @@
     visibility:visible;
     opacity:1;
     transform:translate(-50%,-30%)
-
+    
 }
 
 .list-product__actions-view,.list-product__actions-cart{
@@ -1882,4 +1896,245 @@ margin-bottom: 50px;
 }
 .footer-content-col{
     margin-bottom: 15px;
+}
+/* app-news */
+.app-news-list-items-thumbnail{
+    display:block;
+    position:relative;
+    padding-top: 50%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}.app-news-list-items-thumbnail::before{
+    position: absolute;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255,255,255,.5);
+    content: "";
+    z-index: 2;
+}
+.app-news-list-items-thumbnail:hover::before{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition:all ease 0.6s
+   
+}
+.app-news-list-items-thumbnail:hover .app-news-list-items-thumbnail-img{
+    transform:scale(1.05)
+}
+.app-news-list-items-thumbnail-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--while-color);
+    background-size: cover;
+    transition: all linear 0.8s;
+}
+.app-news-list-items-thumbnail-date{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    font-size:1.4rem;
+    padding: 8px 16px;
+    font-weight: 500;
+    background-color:rgba(255,255,255,0.5);
+    color: var(--text-light-color);
+    transition: all linear 0.3s;
+}
+.app-news-list-items-thumbnail-date::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color:rgba(255,255,255,0.5);
+    transition: all linear 0.3s;
+}
+.app-news-list-items-thumbnail:hover .app-news-list-items-thumbnail-date,.app-news-list-items-thumbnail:hover .app-news-list-items-thumbnail-date::after{
+    background-color:var(--primary-color);
+    color: var(--while-color)
+}
+.app-news-list-items-description{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.app-news-list-items-description-name{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 8px;
+  
+}
+.app-news-list-items-description-name:hover{
+    color: var(--primary-color);
+}
+.app-news-list-items-description-content{
+    font-size: 1.4rem;
+    color: var(--text-light-color);
+    font-weight:400;
+    margin-bottom: 15px;
+}
+.app-news-list-items-description-read-more{
+    display:block;
+    font-size: 1.6rem;
+    font-weight:400;
+    color: var(--text-color);
+    flex: 1;
+    align-items:flex-end;
+    padding:4px 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+.app-news-list-items-description-read-more:hover{
+    color: var(--primary-color)
+}
+.app-news-list-items{
+    margin-bottom: 24px;
+}
+
+/* app-breadcrumb */
+
+.app-breadcrumb-content{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+    background-color: var(--while-color);
+
+}
+.app-breadcrumb-content-title{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 70px 0px;
+}
+.app-breadcrumb-content-title span{
+    font-size: 2rem;
+    font-weight:500;
+    color: var(--while-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,1);
+    
+}
+.app-breadcrumb-wrap{
+    border-bottom: 1px solid var(--black-color);
+    margin-bottom: 50px;
+}
+.app-breadcrumb-container{
+    
+}
+
+/* app-info */
+
+.app-info-content-thumbnail{
+    margin-bottom: 20px;
+    
+}
+.app-info-content-thumbnail-img {
+    
+    width:  100%;
+    padding-top: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--while-color);
+    border-radius: 8px;
+    box-shadow: 6px 6px 10px rgb(0 0 0 / 76%);
+   
+}
+.app-info-content
+{
+    margin-bottom: 40px;
+}
+.app-info-content-description-header{
+    font-size:2.4rem;
+    font-weight:500;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.app-info-content-description-content{
+    font-size:1.4rem;
+    font-weight:500;
+    color: var(--text-light-color);
+    line-height: 2rem;
+}
+/* app-contact */
+.app-contact-container{
+    margin-bottom:50px
+}
+.app-contact-info-header h3{
+    font-size:2rem;
+    font-weight:500;
+    color: var(--text-color);
+    margin: 0px;
+    padding:12px 0px;
+}
+.app-contact-info-content-description,.app-contact-info-content-address,
+.app-contact-info-content-phone,.app-contact-info-content-email{
+    margin-bottom: 20px;
+}
+.app-contact-info-content{
+    font-size:1.6rem;
+    font-weight: 400;
+    color: var(--text-light-color);
+    line-height:2rem;
+}
+.app-contact-info-content span{
+    margin-right: 8px;
+}
+.app-contact-form-line{
+    margin-bottom:20px;
+    display:flex;
+    flex-direction:column;
+}
+.app-contact-form-line h3{
+    font-size:2rem;
+    font-weight:500;
+    color: var(--text-color);
+    margin: 0px;
+    padding:12px 0px;
+}
+.app-contact-form-label{
+    font-size: 1.6rem; 
+    font-weight:400;
+    color: var(--text-light-color);
+    margin-bottom: 8px;
+}
+.app-contact-form-label span{
+    color: var(--primary-color);
+}
+.app-contact-form-input{
+    font-size: 1.6rem; 
+    font-weight:400;
+    color: var(--text-light-color);
+    outline: none;
+    border: 1px solid var(--border-color);
+    padding:8px 12px;
+}
+.app-contact-form-textarea{
+    font-size: 1.6rem; 
+    font-weight:400;
+    color: var(--text-light-color);
+    outline: none;
+    border: 1px solid var(--border-color);
+    padding:8px 12px;
+    min-height: 120px;
+}
+.app-contact-form-btn{
+    background-color:var(--primary-green-color);
+    color:var(--while-color);
+    font-size:1.8rem;
+    font-weight:500;
 }

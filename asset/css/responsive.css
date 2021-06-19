@@ -72,5 +72,30 @@
     .footer-content-wrap{
         padding:0 15px;
     }
+    .app-news-list{
+        padding:0 15px
+    }
+    .app-info-content
+    {
+        margin-bottom: 15px;
+    }
+    .app-info-content-description-center{
+        order:2
+    }
+    .app-info-content-thumbnail-center{
+        order:1
+    }
+    .app-contact-container,.app-info-wrap{
+        margin:0px 15px
+    }
+    .app-breadcrumb-wrap,.app-contact-container{
+        margin-bottom: 30px;
+    }
+    .app-contact-form{
+        order:2;
+    }
+    .app-contact-info{
+        order: 1;
+    }
 }
 
