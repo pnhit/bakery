@@ -23,9 +23,6 @@
    
    
 }
-.header-logo-link{
-
-}
 .header-logo-link-img{
     height: calc(var(--header-height) - 20px)
     
@@ -183,21 +180,18 @@
     visibility:hidden;
     opacity:0px;
     transition:all linear 0.3s;
-    
-
 }
 .modal-auth__form--active{
     right:0px;
     visibility:visible;
     opacity:1;
-
 }
 .modal-auth__form-header{
     display:flex;
     padding: 5px 0px 5px 20px;
     border: 1px solid rgba(129,129,129,0.2);
     align-items: center;
-
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 15%);
 }
 .modal-auth__form-header-title{
     font-size:1.8rem;
@@ -346,6 +340,7 @@
     padding: 5px 0px 5px 20px;
     border: 1px solid rgba(129,129,129,0.2);
     align-items: center;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 15%);
 }
 .modal-search__form-header-title{
     font-size:1.8rem;
@@ -548,10 +543,6 @@
 }
 .modal-menu-mobile__content-wrap::-webkit-scrollbar-track{
     background-color:transparent
-}
-.modal-menu-mobile__list{
-    
-    
 }
 .modal-menu-mobile__submenu-list
 {
@@ -772,10 +763,6 @@
     font-size:1.6rem;
     font-weight: 500;
 }
-.modal-cart__suggest{
-   
-
-}
 .modal-cart__suggest-heading h3{
     font-size:1.6rem;
     font-weight:500;
@@ -787,9 +774,6 @@
 }
 .modal-cart__suggest-list{
     padding:20px;
-}
-.modal-cart__suggest-list-items{
-   
 }
 .modal-cart__suggest-list-items + .modal-cart__suggest-list-items{
     margin-top: 20px;
@@ -808,6 +792,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 10px;
+    border-radius:2px;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 60%);
 }
 .modal-cart__suggest-list-item-description-name{
     font-size: 1.6rem;
@@ -843,9 +829,7 @@
 
 
 /* modal/cart item */
-.modal-cart__item{
-    
-}
+
 .modal-cart__item-header h3{
     font-size:1.6rem;
     font-weight:500;
@@ -867,14 +851,16 @@
     display:flex;
 }
 .modal-cart__item-content-list-items-content-thumbnail{
-    background-color:var(--while-color);
+    background-color: var(--while-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border:1px solid var(--border-color);
+    border: 1px solid var(--border-color);
     width: 100px;
     height: 100px;
     margin-right: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 60%);
 }
 .modal-cart__item-content-list-items-content-description{
     flex: 1;
@@ -1049,6 +1035,8 @@
     width: 100px;
     height: 100px;
     margin-right: 20px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 60%);
 }
 .modal-like-items-description-price
 {
@@ -1072,8 +1060,6 @@
 }
 .modal-like-items-description-view-detail:hover{
     color: var(--while-color);
-    ;
-    
 }
 .modal-like-items-description-name:hover{
     color: var(--primary-green-color);
@@ -1394,9 +1380,7 @@
     margin-top: var(--header-height);
 }
 /* app-container/app-slideshow */
-.app-slideshow{
 
-}
 .app-slideshow-wrap{
     height: var(--slider-height);
     overflow:hidden;
@@ -1790,9 +1774,6 @@
     color:var(--text-color);
     transition: all linear 0.3s;
 }
-.list-product__actions-view-title,.list-product__actions-cart-tilte{
-    
-}
 .list-product__actions-view-icon,.list-product__actions-cart-icon{
     width: 100%;
     padding: 10px 20px;
@@ -1895,9 +1876,7 @@ margin-bottom: 50px;
     font-weight: 500;
     color: var(--text-light-color);
 }
-.footer-content-info{
-  
-}
+
 .footer-content-info-items{
     display: flex;
     align-items:center;
@@ -2137,16 +2116,8 @@ margin-bottom: 50px;
     border-bottom: 1px solid var(--black-color);
     margin-bottom: 50px;
 }
-.app-breadcrumb-container{
-    
-}
 
 /* app-info */
-
-.app-info-content-thumbnail{
-    margin-bottom: 20px;
-    
-}
 .app-info-content-thumbnail-img {
     
     width:  100%;
@@ -2333,7 +2304,7 @@ margin-bottom: 50px;
     background-size: cover;
     margin:0px auto;
     border-radius: 2px;
-
+    box-shadow: 4px 4px 6px rgb(0 0 0 / 80%);
 }
 .app-cart-content-items-col {
     padding-top: 12px;padding-bottom:12px
@@ -2415,6 +2386,9 @@ font-weight:400
 }
 .app-cart-content{
     margin-bottom: 24px;
+}
+.app-cart-order-form{
+    margin-bottom:15px
 }
 .app-cart-order-form-line{
     margin-bottom: 20px;
