@@ -105,8 +105,8 @@
                                         <span>Trang Chủ</span>
                                     </a>
                                     <span class='app-breadcrumb-content-title-slash'>/</span>
-                                    <a href="./news.html" class="app-breadcrumb-content-title-link">
-                                        <span>Tin Tức</span>
+                                    <a href="./category.html" class="app-breadcrumb-content-title-link">
+                                        <span>Category</span>
                                     </a>
                                 </div>
                             </div>
@@ -114,75 +114,246 @@
                     </div>
                 </div>
             </div>
-            <div class="app-news">
-                <div class="app-news-wrap grid wide">
-                    <div class="row">
-                        <div class="app-news-header col c-12 l-12 m-12">
-                            <div class=" app-news-header-title">
-                                <h3>Tin Tức</h3>
-                            </div>
-                           
-                        </div>
-                       
-                    </div>
-                    <div class="app-news-list row">
-                        <div class="app-news-list-items col l-4 m-4 c-12">
-                            <a href="./news-detail.html" class="app-news-list-items-thumbnail">
-                                <div class="app-news-list-items-thumbnail-img" style="background-image: url('./asset/images/news/slide1.jpg');"></div>
-                                <div class="app-news-list-items-thumbnail-date">18/06</div>
-                            </a>
-                            <div class="app-news-list-items-description">
-                                <a href="./news-detail.html" class="app-news-list-items-description-name">
-                                    KHÓA HỌC LÀM BÁNH DÀNH CHO CÁC BÉ!
-                                </a>
-                                <div class="app-news-list-items-description-content">
-                                    <span>HT'Bakery hiện tại đang có khóa học làm bánh dành cho các bé…</span>
+            <div class="app-cart">
+                <div class="app-cart-wrap grid wide">
+                    <div class="app-cart-container">
+
+                        <div class="app-cart-content row">
+                            <div class="col l-12 c-12 m-12">
+                                <div class="app-cart-content-header row">
+                                    <div class="col l-2 m-4 c-4">
+                                        <div class="app-cart-content-header-product">Sản Phẩm</div>
+                                    </div>
+                                    <div class="col l-8 m-8 c-8">
+                                        <div class="row">
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-header-product-name">Tên</div> 
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-header-product-price">Giá</div>
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-header-product-quantity">Số Lượng</div>
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-header-product-size">Kích Thước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-12 c-12">
+                                        <div class="app-cart-content-header-product-total">Tổng</div>
+                                    </div>
                                 </div>
-                                <a href="./news-detail.html" class="app-news-list-items-description-read-more">
-                                    Xem Thêm...
-                                </a>
-                            </div>
-                        </div>
-                        <div class="app-news-list-items col l-4 m-4 c-12">
-                            <a href="./news-detail.html" class="app-news-list-items-thumbnail">
-                                <div class="app-news-list-items-thumbnail-img" style="background-image: url('./asset/images/news/BAKERY-01.jpg');"></div>
-                                <div class="app-news-list-items-thumbnail-date">18/06</div>
-                            </a>
-                            <div class="app-news-list-items-description">
-                                <a href="./news-detail.html" class="app-news-list-items-description-name">
-                                    KHÓA HỌC LÀM BÁNH DÀNH CHO CÁC BÉ!
-                                </a>
-                                <div class="app-news-list-items-description-content">
-                                    <span>HT'Bakery hiện tại đang có khóa học làm bánh dành cho các bé…</span>
+                                <div class="app-cart-content-items row">
+                                    <div class="app-cart-content-items-col col l-2 m-4 c-4">
+                                        <div class="app-cart-content-items-img" style="background-image:url('./asset/images/product/IMG_9879.jpg')"></div>
+                                    </div>
+                                    <div class="app-cart-content-items-col col l-8 m-8 c-8">
+                                        <div class="app-cart-content-items-col-row  row">
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-name"><span>Bánh Sinh Nhật</span> </div> 
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-price app-cart-content-items-price-sale--active">
+                                                    <span class="app-cart-content-items-price-base">200.000</span> 
+                                                    <span class="app-cart-content-items-price-sale">200.000</span>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-quantity">
+                                                    <div class="app-cart-content-items-quantity-wrap">
+                                                        
+                                                        <div class="app-cart-content-items-quantity-remove"><i class="ti-trash"></i></div>
+                                                        <!-- <div class="app-cart-content-items-quantity-minus"><i class="ti-minus"></i></div> -->
+                                                        <div class="app-cart-content-items-quantity-label"><span>1</span></div>
+                                                        <div class="app-cart-content-items-quantity-plus"><i class="ti-plus"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-size">
+                                                    <div class="app-cart-content-items-size-wrap">
+                                                        <input type="radio" class="app-cart-content-items-size-input" checked>
+                                                        <label for="" class="app-cart-content-items-size-label">S</label>
+                                                    </div>
+                                                    <div class="app-cart-content-items-size-wrap">
+                                                        <input type="radio" class="app-cart-content-items-size-input">
+                                                        <label for="" class="app-cart-content-items-size-label">M</label>
+                                                    </div>
+                                                    <div class="app-cart-content-items-size-wrap">
+                                                        <input type="radio" class="app-cart-content-items-size-input">
+                                                        <label for="" class="app-cart-content-items-size-label">L</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="app-cart-content-items-col app-cart-content-items-col-total col l-2 m-12 c-12">
+                                        <div class="app-cart-content-items-total"><span>200.000</span></div>
+                                    </div>
                                 </div>
-                                <a href="./news-detail.html" class="app-news-list-items-description-read-more">
-                                    Xem Thêm...
-                                </a>
-                            </div>
-                        </div>
-                        <div class="app-news-list-items col l-4 m-4 c-12">
-                            <a href="./news-detail.html" class="app-news-list-items-thumbnail">
-                                <div class="app-news-list-items-thumbnail-img" style="background-image: url('./asset/images/news/slide1.jpg');"></div>
-                                <div class="app-news-list-items-thumbnail-date">18/06</div>
-                            </a>
-                            <div class="app-news-list-items-description">
-                                <a href="./news-detail.html" class="app-news-list-items-description-name">
-                                    KHÓA HỌC LÀM BÁNH DÀNH CHO CÁC BÉ!
-                                </a>
-                                <div class="app-news-list-items-description-content">
-                                    <span>HT'Bakery hiện tại đang có khóa học làm bánh dành cho các bé…</span>
+                                <div class="app-cart-content-items row">
+                                    <div class="app-cart-content-items-col col l-2 m-4 c-4">
+                                        <div class="app-cart-content-items-img" style="background-image:url('./asset/images/product/IMG_9879.jpg')"></div>
+                                    </div>
+                                    <div class="app-cart-content-items-col col l-8 m-8 c-8">
+                                        <div class="app-cart-content-items-col-row  row">
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-name"><span>Bánh Sinh Nhật</span> </div> 
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-price app-cart-content-items-price-sale--active">
+                                                    <span class="app-cart-content-items-price-base">200.000</span> 
+                                                    <span class="app-cart-content-items-price-sale">200.000</span>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-quantity">
+                                                    <div class="app-cart-content-items-quantity-wrap">
+                                                        
+                                                        <div class="app-cart-content-items-quantity-remove"><i class="ti-trash"></i></div>
+                                                        <!-- <div class="app-cart-content-items-quantity-minus"><i class="ti-minus"></i></div> -->
+                                                        <div class="app-cart-content-items-quantity-label"><span>1</span></div>
+                                                        <div class="app-cart-content-items-quantity-plus"><i class="ti-plus"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-size">
+                                                    <div class="app-cart-content-items-size-wrap">
+                                                        <input type="radio" class="app-cart-content-items-size-input" checked>
+                                                        <label for="" class="app-cart-content-items-size-label">S</label>
+                                                    </div>
+                                                    <div class="app-cart-content-items-size-wrap">
+                                                        <input type="radio" class="app-cart-content-items-size-input">
+                                                        <label for="" class="app-cart-content-items-size-label">M</label>
+                                                    </div>
+                                                    <div class="app-cart-content-items-size-wrap">
+                                                        <input type="radio" class="app-cart-content-items-size-input">
+                                                        <label for="" class="app-cart-content-items-size-label">L</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="app-cart-content-items-col app-cart-content-items-col-total col l-2 m-12 c-12">
+                                        <div class="app-cart-content-items-total"><span>200.000</span></div>
+                                    </div>
                                 </div>
-                                <a href="./news-detail.html" class="app-news-list-items-description-read-more">
-                                    Xem Thêm...
-                                </a>
+                                <div class="app-cart-content-items row">
+                                    <div class="app-cart-content-items-col col l-2 m-4 c-4">
+                                        <div class="app-cart-content-items-img" style="background-image:url('./asset/images/product/IMG_9879.jpg')"></div>
+                                    </div>
+                                    <div class="app-cart-content-items-col col l-8 m-8 c-8">
+                                        <div class="app-cart-content-items-col-row  row">
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-name"><span>Bánh Sinh Nhật</span> </div> 
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-price app-cart-content-items-price-sale--active">
+                                                    <span class="app-cart-content-items-price-base">200.000</span> 
+                                                    <span class="app-cart-content-items-price-sale">200.000</span>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-quantity">
+                                                    <div class="app-cart-content-items-quantity-wrap">
+                                                        
+                                                        <div class="app-cart-content-items-quantity-remove"><i class="ti-trash"></i></div>
+                                                        <!-- <div class="app-cart-content-items-quantity-minus"><i class="ti-minus"></i></div> -->
+                                                        <div class="app-cart-content-items-quantity-label"><span>1</span></div>
+                                                        <div class="app-cart-content-items-quantity-plus"><i class="ti-plus"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="app-cart-content-items-size">
+                                                    <div class="app-cart-content-items-size-wrap">
+                                                        <input type="radio" class="app-cart-content-items-size-input" checked>
+                                                        <label for="" class="app-cart-content-items-size-label">S</label>
+                                                    </div>
+                                                    <div class="app-cart-content-items-size-wrap">
+                                                        <input type="radio" class="app-cart-content-items-size-input">
+                                                        <label for="" class="app-cart-content-items-size-label">M</label>
+                                                    </div>
+                                                    <div class="app-cart-content-items-size-wrap">
+                                                        <input type="radio" class="app-cart-content-items-size-input">
+                                                        <label for="" class="app-cart-content-items-size-label">L</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="app-cart-content-items-col app-cart-content-items-col-total col l-2 m-12 c-12">
+                                        <div class="app-cart-content-items-total"><span>200.000</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-cart-content-total col l-12 c-12 m-12">
+                                <div class="app-cart-content-total-wrap">
+                                    <span class="app-cart-content-total-label">Thành Tiền:</span>
+                                    <span class="app-cart-content-total-value">400.000</span>
+                                </div>
                             </div>
                         </div>
+                        <div class="app-cart-order row">
+                            <div class="app-cart-order-form col l-6 c-12 m-12">
+                                <form action="" class="app-cart-order-form-content">
+                                    <div class="app-cart-order-form-line">
+                                        <h3>Thông Tin Của Bạn</h3>
+                                    </div>
+                                    <div class="app-cart-order-form-line">
+                                        <label for="" class="app-cart-order-form-label">Tên Bạn <span>(*)</span></label>
+                                        <input type="text" class="app-cart-order-form-input">
+                                    </div>
+                                    <div class="app-cart-order-form-line">
+                                        <label for="" class="app-cart-order-form-label">Số Điện Thoại <span>(*)</span></label>
+                                        <input type="text" class="app-cart-order-form-input">
+                                    </div>
+                                    <div class="app-cart-order-form-line">
+                                        <label for="" class="app-cart-order-form-label">Địa Chỉ <span>(*)</span></label>
+                                        <input type="text" class="app-cart-order-form-input">
+                                    </div>
+                                    <div class="app-cart-order-form-line">
+                                        <label for="" class="app-cart-order-form-label">Ghi Chú <span>(*)</span></label>
+                                        <textarea type="text" class="app-cart-order-form-textarea"></textarea>
+                                    </div>
+                                    <div class="app-cart-order-form-line">
+                                        <button class="app-cart-order-form-btn btn">Đặt Hàng</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="app-cart-odder-contact col l-6 m-6 c-12">
+                                <div class="app-cart-odder-contact-wrap">
+                                    <div class="app-cart-odder-contact-header">
+                                        <h3>Thông Tin Liên Hệ</h3>
+                                    </div>
+                                    <div class="app-cart-odder-contact-content">
+                                        <div class="app-cart-odder-contact-content-description">
+                                            <p>Mọi ý kiến về đơn hàng vui lòng liên hệ với chúng tôi qua số Điện Thoại: <span>097.279.0248</span></p>
+                                        </div>
+                                        <div class="app-cart-odder-contact-content-address">
+                                            <span class="app-cart-odder-contact-content-address-icon"><i class="ti-location-pin"></i></span>
+                                            <span class="app-cart-odder-contact-content-address">C28-TT6 KĐT Văn Quán, Phường Phúc La, Hà Đông,Hà Nội</span>
+                                        </div>
+                                        <div class="app-cart-odder-contact-content-phone">
+                                            <span class="app-cart-odder-contact-content-phone-icon"><i class="ti-mobile"></i></span>
+                                            <span class="app-cart-odder-contact-content-phone">097.279.0248</span>
+                                        </div>
+                                        <div class="app-cart-odder-contact-content-email">
+                                            <span class="app-cart-odder-contact-content-email-icon"><i class="ti-email"></i></span>
+                                            <span class="app-cart-odder-contact-content-email">phamngochoan.it@gmail.com</span>
+                                        </div>
+    
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-           
         </div>
-       
         <footer class="footer">
             <div class="footer-wrap grid">
                 <div class="footer-content grid">

@@ -305,10 +305,12 @@ function main(){
     
     const slideShowMain= new hendlSlideShow('.app-slideshow',true);
     const quickViewSlide= new hendlSlideShow('.modal-quickview-slide',false);
+    const productDeatilSlide= new hendlSlideShow('.app-product-detail-slide',false);
     const submenumobile= new hendlSubMenuMobile();
     slideShowMain.run();
     submenumobile.run();
     quickViewSlide.run();
+    productDeatilSlide.run();
     hendlModal();
     hendlModalFormAuth();
 }
